@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+#PIList {
+	overflow:hidden;
+        list-style-type: none;
+}
+
+#PIList li {
+	position:relative;
+	padding:5px;
+	    background: #22313a;
+	float:left;
+	margin:0 5px 5px 0;
+	 
+        border-radius: 4px;
+}
+
+#PIList .pi-image {
+	width:80px;
+	height:80px;
+	display:block;
+}
+
+#PIList .pi-remove-link {
+	position:absolute;
+	top:0;
+	right:0;
+ 
+}
+
+#PIList .pi-remove-link img {
+	display:block;
+}
