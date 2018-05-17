@@ -63,9 +63,23 @@
   .single-table .btn-signup:after {
     border-width:78px 106px 0;
   }
+  
+  #home-slider .slide-text {
+     position: relative;
+    top: 0px;
+   
+    margin-right: 30px;
+  
+}
 
 }
 
+@media (min-width: 1201px){
+     #home-slider .slide-text {
+    width:511px;
+  
+} 
+}
 /* sm */
 @media only screen and (max-width : 992px) {
 
@@ -86,12 +100,12 @@
   }
 
   #home-slider .main-slider {
-    height: 250px;
+    height: 630px;
   }
 
   #home-slider .slide-text {
     top: 0;
-    width: 50%;
+    
   }
 
   #home-slider h1 {

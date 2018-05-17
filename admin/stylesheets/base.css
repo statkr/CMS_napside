@@ -62,12 +62,20 @@
   height: 680px;
 }
 
-#home-slider .slide-text {
-    position: absolute;
-    top: 0px;
-    right: 80px;
-    width: 511px;
+#super-next{
+      
+    padding: 10px;
+    font-size: 14px;
+    float: right;
+       margin-bottom: 26px;
+    background: #e0f0d7;
+    border-radius: 3px;
+    margin-top: 12px;
+    width: 127px;
+    border: 1px solid #d7e9c4;
 }
+
+
 
 .animate-in .slide-text {
   -webkit-animation: fadeInLeftBig 1200ms cubic-bezier(0.190,1.000,0.220,1.000) 300ms both;
@@ -76,7 +84,7 @@
 
 #home-slider .slider-hill {
   position: absolute;
-    right: 792px;
+    right: 252px;
     top: 160px;
 }
 
@@ -87,7 +95,7 @@
 
 #home-slider .slider-house {
   position: absolute;
-    right: 751px;
+    right: 211px;
     top: 140px;
 }
 
@@ -98,7 +106,7 @@
 
 #home-slider .slider-sun {
   position: absolute;
-    right: 678px;
+    right: 138px;
     top: 46px;
 }
 
@@ -109,7 +117,7 @@
 
 #home-slider .slider-birds1 {
   position: absolute;
-    right: 738px;
+    right: 198px;
         top: 130px;
 }
 
@@ -120,7 +128,7 @@
 
 #home-slider .slider-birds2 {
   position: absolute;
-    right: 765px;
+    right: 225px;
     top: 341px;
 }
 
@@ -131,7 +139,7 @@
 
 #home-slider .slider-birds3 {
   position: absolute;
-    right: 837px;
+    right: 297px;
     top: 43px;
 }
 

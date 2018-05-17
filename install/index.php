@@ -3,12 +3,12 @@
  * @package install
  *
  * @author Popkov Pavel <pavel@fn.de>
- * @version 0.0.1
+ * @version 0.0.3
  * @license http://www.gnu.org/licenses/gpl.html GPL License
- * @copyright Popkov Pavel, 2011
+ * @copyright Popkov Pavel, 2018
  */
 
-// Defines
+//Defines
 define('CMS_ROOT',  realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'));
 define('I18N_PATH', CMS_ROOT.DIRECTORY_SEPARATOR.'install'.DIRECTORY_SEPARATOR.'i18n');
 define('CONFIG_FILE_PATH', CMS_ROOT.DIRECTORY_SEPARATOR.'config.php');
@@ -420,12 +420,38 @@ window.onload = function () {
           <section id="home-slider">
         <div class="container">
             <div class="row">
+                
+                
+                
                 <div class="main-slider animate-in">
           
                     
+                    
+                    <div class="col-lg-6 hidden-md hidden-sm hidden-xs">
+                    <img src="../admin/images/circle_left_right.png" class="slider-sun" alt="slider image">
+                    <img src="../admin/images/center_line.png" class="slider-birds1" alt="slider image">
+                    <img src="../admin/images/circle_center_layback.png" class="slider-house" alt="slider image">
+                    <img src="../admin/images/N_in_center.png" class="slider-hill" alt="slider image">
+                    <img src="../admin/images/circle_up.png" class="slider-birds2" alt="slider image">
+                    <img src="../admin/images/circle_up.png" class="slider-birds3" alt="slider image">
+                     
+                    <img src="../admin/images/n.png" class="word-n" alt="slider image">
+                    <img src="../admin/images/a.png" class="word-a" alt="slider image">
+                    <img src="../admin/images/p.png" class="word-p" alt="slider image">
+                    <img src="../admin/images/s.png" class="word-s" alt="slider image">
+                    <img src="../admin/images/i.png" class="word-i" alt="slider image">
+                    <img src="../admin/images/d.png" class="word-d" alt="slider image">
+                    <img src="../admin/images/e.png" class="word-e" alt="slider image">
+                            
+                    <img src="../admin/images/CMS-1.png" class="word-cms1" alt="slider image">
+                    <img src="../admin/images/CMS-2.png" class="word-cms2" alt="slider image">
+                    <img src="../admin/images/CMS-3.png" class="word-cms3" alt="slider image">
+                    </div> 
+                    
+                    
                     <?php if (!$success): ?> 
                     
-                    
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                      <div class="slide-text">
                         <h1><?php echo __('Welcome'); ?></h1>
                         <br>
@@ -509,31 +535,13 @@ window.onload = function () {
                      
                      
                      </div> 
-                     <div class="col-md-8">  </div> 
-                       <div class="col-md-2">    
-                           <input type="button" value="Продолжить" class="next"  style="margin-left:14px; padding: 10px;font-size: 14px; margin-top: 10px;    width: 127px;" />
+                     
+                       <div class="col-md-12">    
+                           <input id="super-next" type="button" value="Продолжить" class="next"  />
                            
                        </div> 
                     </div>
-                    
-                    <img src="../admin/images/circle_left_right.png" class="slider-sun" alt="slider image">
-                    <img src="../admin/images/center_line.png" class="slider-birds1" alt="slider image">
-                    <img src="../admin/images/circle_center_layback.png" class="slider-house" alt="slider image">
-                    <img src="../admin/images/N_in_center.png" class="slider-hill" alt="slider image">
-                    <img src="../admin/images/circle_up.png" class="slider-birds2" alt="slider image">
-                    <img src="../admin/images/circle_up.png" class="slider-birds3" alt="slider image">
-                     
-                    <img src="../admin/images/n.png" class="word-n" alt="slider image">
-                    <img src="../admin/images/a.png" class="word-a" alt="slider image">
-                    <img src="../admin/images/p.png" class="word-p" alt="slider image">
-                    <img src="../admin/images/s.png" class="word-s" alt="slider image">
-                    <img src="../admin/images/i.png" class="word-i" alt="slider image">
-                    <img src="../admin/images/d.png" class="word-d" alt="slider image">
-                    <img src="../admin/images/e.png" class="word-e" alt="slider image">
-                            
-                    <img src="../admin/images/CMS-1.png" class="word-cms1" alt="slider image">
-                    <img src="../admin/images/CMS-2.png" class="word-cms2" alt="slider image">
-                    <img src="../admin/images/CMS-3.png" class="word-cms3" alt="slider image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -553,7 +561,7 @@ window.onload = function () {
         
        
     
-        <div class="col-md-6" style="border-radius: 0px;">
+        <div class="col-lg-6 hidden-md hidden-sm hidden-xs" style="border-radius: 0px;">
             <section id="home-slider">
             <div class="main-slider2 animate-in">
                 <img src="../admin/images/step2back.png" class="step2-1" alt="slider image">
