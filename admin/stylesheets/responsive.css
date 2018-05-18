@@ -31,6 +31,12 @@
     width: 33%;
   }
   
+  #super-prew{
+          position: relative;
+    top: -80px;
+    right: 166px;
+  }
+  
 .granica{
  
         padding-right: 48px;
@@ -40,6 +46,11 @@
 #second{
     height: 660px;
 }   
+
+#third{
+    height: 520px;
+}  
+    
 }
 
 /*sm only*/
@@ -51,6 +62,17 @@
   #second{
           height: 1015px;
               margin-bottom: 20px;
+  }
+  
+  #third {
+    height: 790px;
+    margin-bottom: 20px;
+}
+  
+  #super-prew{
+          position: relative;
+    top: -80px;
+    right: 166px;
   }
 }
 
@@ -88,6 +110,7 @@
   
 }
 
+
 .granica{
     margin-left: 20px;
     margin-right: 20px;
@@ -103,6 +126,16 @@
     #second{
     height: 682px;
 }   
+
+#third{
+    height: 660px;
+}  
+
+  #super-prew{
+          position: relative;
+    top: -80px;
+    right: 166px;
+  }
 
 .padd-1200{
         padding-right: 30px;
@@ -245,11 +278,21 @@
   h1{
     font-size: 22px;
   }
-  
+    #super-prew{
+          position: relative;
+    top: -2px;
+ 
+  }
    #second{
           height: 1045px;
               margin-bottom: 20px;
   }
+
+    #third {
+    height: 790px;
+    margin-bottom: 20px;
+}
+
 
   h2{
     font-size:20px;

@@ -686,14 +686,14 @@ window.onload = function () {
     </div>
     
     
-    <div id="third"  style="display: none; height: 680px;">
+    <div id="third"  style="display: none; ">
         <div class="col-md-4 shag-old" style="border-radius: 0px;"><h4> <?php echo __('Step'); ?> 1</h4><p>Проверка модулей и компонентов</p>  </div>
         <div class="col-md-4 shag" style="border-radius: 0px;"> <h4><?php echo __('Step'); ?> 2</h4><p><?php echo __('Database information'); ?></p> </div>
         <div class="col-md-4 " style="border-radius: 0px;"> <h4><?php echo __('Step'); ?> 3 </h4><p>Дополнительная информация</p> </div>
         
         
         
-        <div class="col-md-6" style="border-radius: 0px;">
+        <div class="col-lg-6 hidden-md hidden-sm hidden-xs" style="border-radius: 0px;">
           <section id="home-slider">
             <div class="main-slider2 animate-in">
                  
@@ -708,11 +708,12 @@ window.onload = function () {
              </div>
                 </section>
         </div> 
-         <div class="col-md-6" style="border-radius: 0px;     padding-right: 30px;"> 
+         <div class="col-lg-6 col-md-12 col-sm-12" style="border-radius: 0px;     padding-right: 30px;"> 
          
              
               <h1 style="margin-bottom:6px"><?php echo __('Other information'); ?></h1>
-       <p style="text-align: justify;padding: 0 18px 0 18px;">
+       <p style="text-align: justify;padding: 0 18px 0 18px;     margin-top: 20px;
+    margin-bottom: 25px;">
            
            Скоро начнется установка. Убедитесь в корректности заполнения необходимых полей и нажмите кнопку "Установить". Если у вас возникнут проблемы, ознакомтесь с официальной <a>документацией</a>.
 
@@ -758,7 +759,9 @@ window.onload = function () {
 				</section><?php } ?>
 				<div class="col-md-12">  
 				
-					<button id="super-next" > <?php echo __('Install now!'); ?></button>
+					<button id="super-next" style="
+    margin-top: 30px;
+" > <?php echo __('Install now!'); ?></button>
 				
 				<br></div>
 			</form>
@@ -769,7 +772,7 @@ window.onload = function () {
          
          </div>
         
-             <input id="super-prev" type="button" value="Назад" class="previous" />
+             <input id="super-prew"type="button" value="Назад" class="previous" />
             
            
             

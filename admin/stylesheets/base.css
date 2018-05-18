@@ -90,6 +90,19 @@
     border: 1px solid #c4d8e9;
     } 
 
+    #super-prew{
+        margin-right: 20px;
+    padding: 10px;
+    font-size: 14px;
+    float: right;
+    margin-bottom: 26px;
+    background: #d7ecf0;
+    border-radius: 3px;
+    margin-top: 12px;
+    width: 127px;
+    border: 1px solid #c4d8e9;
+    }
+    
     .styleshir{
             text-align: justify;
     padding: 0 18px 0 18px;
@@ -911,9 +924,7 @@ input[type="button"] img {
 	background:silver;
 	padding:10px 15px;
 	color:#fff;
-	box-shadow:0 0 3px silver;
-	-moz-box-shadow:0 0 3px silver;
-	-webkit-box-shadow:0 0 3px silver;
+	 
 	border-top-width:0;
 	z-index:10000000;
 }
