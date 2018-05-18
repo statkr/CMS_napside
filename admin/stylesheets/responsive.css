@@ -30,6 +30,16 @@
   .col-md-4.portfolio-item{
     width: 33%;
   }
+  
+.granica{
+ 
+        padding-right: 48px;
+}
+
+
+#second{
+    height: 660px;
+}   
 }
 
 /*sm only*/
@@ -37,10 +47,16 @@
   .col-sm-4.portfolio-item{
     width: 33%;
   }
+  
+  #second{
+          height: 1015px;
+              margin-bottom: 20px;
+  }
 }
 
 /* md */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1199px) {
+
 
   /*Pricing Table*/
   .single-price .plan-price:after {
@@ -72,14 +88,34 @@
   
 }
 
+.granica{
+    margin-left: 20px;
+    margin-right: 20px;
+       
 }
 
-@media (min-width: 1201px){
+}
+
+@media (min-width: 1200px){
      #home-slider .slide-text {
     width:511px;
-  
-} 
+     }
+    #second{
+    height: 682px;
+}   
+
+.padd-1200{
+        padding-right: 30px;
 }
+
+#super-prev{
+ 
+    margin-top: 20px;
+}
+
+}
+
+
 /* sm */
 @media only screen and (max-width : 992px) {
 
@@ -208,6 +244,11 @@
 
   h1{
     font-size: 22px;
+  }
+  
+   #second{
+          height: 1045px;
+              margin-bottom: 20px;
   }
 
   h2{

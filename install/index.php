@@ -403,18 +403,20 @@ window.onload = function () {
 	</head>
 	<body>
             
- <?php if ($error): ?><div id="errorMessage" class="message"><?php echo $error; ?></div><?php endif; ?>      
+    
             
             
             <section id="logo_style">
         <div class="container">
             <div class="row">
+                
                 <div class="col-xs-12 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms;">
-                   
+                    <?php if ($error): ?><div id="errorMessage" class="message"><?php echo $error; ?></div><?php endif; ?>  
                    
 <div class="tabs">
 
 <div id="div" >
+    
     <div id="first">
         
           <section id="home-slider">
@@ -552,7 +554,7 @@ window.onload = function () {
        
       
     </div>
-    <div id="second" style="display: none;     height: 680px;">
+    <div id="second" style="display: none;   ">
         
         
         <div class="col-md-4 shag" style="border-radius: 0px;"><h4> <?php echo __('Step'); ?> 1</h4><p>Проверка модулей и компонентов</p>  </div>
@@ -569,18 +571,18 @@ window.onload = function () {
                 <img src="../admin/images/step2lock.png" class="step2-3" alt="slider image">
 
              </div>
-                </section>
+                </section>  
         </div>
         
         
-        <div class="col-md-6 slide-text animate-in" style="border-radius: 0px;     padding-right: 48px;"> 
+        <div class="col-md-12 col-lg-6 slide-text granica animate-in padd-1200" style="border-radius: 0px; "> 
        <h1 style="margin-bottom:6px">Подключение БД</h1>
-       <p style="text-align: justify;padding: 0 18px 0 18px;">Заполните поля в форме представленной ниже, для подключения к выбранной базе данных. Поля обязательные для заполнения отмечены символом *  </p>
+       <p class="styleshir">Заполните поля в форме представленной ниже, для подключения к выбранной базе данных. Поля обязательные для заполнения отмечены символом *  </p>
        <br>
-   <div class="col-md-5" style="text-align: left;">
+   <div class="col-md-4 col-lg-5" style="text-align: left;">
     <p><?php echo __('Database driver'); ?> </p>
   </div>
-   <div class="col-md-7" >  
+   <div class="col-md-8 col-lg-7" >  
 				
 <section id="installDriver" >
                                                 <span>
@@ -594,13 +596,13 @@ window.onload = function () {
 				</section>
                                 </div>				
            
-        <div id="installDBServer" class="col-md-12">  <br></div>
+        <div id="installDBServer" class="col-md-12">  <br></div> 
     <section id="installDBServer" >    
-   <div class="col-md-5" style="text-align: left;">
+   <div class="col-md-4 col-lg-5" style="text-align: left;">
     <p><?php echo __('Database server'); ?>:</p>
   </div>
 
-           <div class="col-md-7">  
+           <div class="col-md-8 col-lg-7">  
 				
 					<span><input id="installDBServerField" class="input-text" type="text" name="install[db_server]" maxlength="255" size="50" value="<?php echo(isset($data['db_server']) ? $data['db_server']: 'localhost'); ?>" /></span>
 				
@@ -610,63 +612,77 @@ window.onload = function () {
        <div id="installDBServer" class="col-md-12">  <br></div>
 				<section id="installDBPort">
                                     
-                                    <div class="col-md-5" style="text-align: left;">
+                                    <div class="col-md-4 col-lg-5" style="text-align: left;">
 					<p for="installDBPortField"><?php echo __('Database port'); ?>:</p>
 					</div>
-                                    <div class="col-md-7"> 
+                                    <div class="col-md-8 col-lg-7"> 
                                         <span><input id="installDBPortField" class="input-text" type="text" name="install[db_port]" maxlength="255" size="50" value="<?php echo(isset($data['db_port']) ? $data['db_port']: '3306'); ?>" /></span>
 				</div>
                                 </section>
 				   <div id="installDBServer" class="col-md-12">  <br></div>
 				
                                   <section id="installDBUser">
-                                      <div class="col-md-5" style="text-align: left;">
+                                      <div class="col-md-4 col-lg-5" style="text-align: left;">
 					<p for="installDBUserField"><?php echo __('Database user'); ?>: </p>
 					</div>
-                                      <div class="col-md-7"> 
+                                      <div class="col-md-8 col-lg-7"> 
                                         <span><input id="installDBUserField" class="input-text" type="text" name="install[db_user]" maxlength="255" size="50" value="<?php echo(isset($data['db_user']) ? $data['db_user']: 'root'); ?>" /></span>
                                         </div>
                                   </section>
 				     <div id="installDBServer" class="col-md-12">  <br></div>
 				<section id="installDBPassword">
-                                    <div class="col-md-5" style="text-align: left;">
+                                    <div class="col-md-4 col-lg-5" style="text-align: left;">
 					<p for="installDBPasswordField"><?php echo __('Database password'); ?>:</p>
 					</div>
-                                      <div class="col-md-7"> 
+                                      <div class="col-md-8 col-lg-7"> 
                                         <span><input id="installDBPasswordField" class="input-text" type="text" name="install[db_password]" maxlength="255" size="50" value="<?php echo(isset($data['db_password']) ? $data['db_password']: ''); ?>" /></span>
 				</div>
                                 </section>
 				   <div class="col-md-12">  <br></div>
 				<section id="installDBName">
-                                    <div class="col-md-5" style="text-align: left;">
+                                    <div class="col-md-4 col-lg-5" style="text-align: left;">
 					<p for="installDBNameField"><?php echo __('Database name'); ?> </p>
 					</div>
-                                      <div class="col-md-7"> 
+                                      <div class="col-md-8 col-lg-7"> 
                                         <span><input id="installDBNameField" class="input-text" type="text" name="install[db_name]" maxlength="255" size="50" value="<?php echo(isset($data['db_name']) ? $data['db_name']: ''); ?>" /></span>
 				</div>
                                 </section>
 				   <div class="col-md-12">  <br></div>
 				<section id="installDBPrefix">
-                                    <div class="col-md-5" style="text-align: left;">
+                                    <div class="col-md-4 col-lg-5" style="text-align: left;">
 					<p for="installDBPrefixField"><?php echo __('Prefix'); ?></p>
 					</div>
-                                      <div class="col-md-7"> 
+                                      <div class="col-md-8 col-lg-7"> 
                                         <span><input id="installDBPrefixField" class="input-text" type="text" name="install[table_prefix]" maxlength="255" size="50" value="<?php echo(isset($data['table_prefix']) ? $data['table_prefix']: ''); ?>" /></span>
 				</div>
                                 </section>
 				
-				
+		
+                                   
+                               
+                                      
+                                   
+                                   
+                                   
+                                                 
         <br></div>
         
         
         
       
-        <input type="button" value="Назад" class="previous" style="position: absolute;bottom: 52px;right: 215px;padding: 10px;font-size: 14px;margin-top: 10px;width: 127px;" />
-        
-        
-        
-            <input type="button" value="Продолжить" class="next" style="padding: 10px;font-size: 14px;margin-top: 10px;width: 127px;position: absolute;bottom: 52px;right: 80px;" />
-          
+                                     
+                                        <input  id="super-next" type="button" value="Продолжить" class="next" style="
+    margin-right: 44px;
+    margin-top: 20px;
+" />
+           
+					 <input id="super-prev" type="button" value="Назад" class="previous" style="
+  
+    margin-top: 20px;
+" />
+                                         
+                                     		 
+         
     </div>
     
     
@@ -692,7 +708,7 @@ window.onload = function () {
              </div>
                 </section>
         </div> 
-         <div class="col-md-6" style="border-radius: 0px;     padding-right: 48px;"> 
+         <div class="col-md-6" style="border-radius: 0px;     padding-right: 30px;"> 
          
              
               <h1 style="margin-bottom:6px"><?php echo __('Other information'); ?></h1>
@@ -742,7 +758,7 @@ window.onload = function () {
 				</section><?php } ?>
 				<div class="col-md-12">  
 				
-					<button style="position: absolute;    bottom: -204px;right: 15px;padding: 9px;font-size: 14px;margin-top: 10px;width: 127px;"> <?php echo __('Install now!'); ?></button>
+					<button id="super-next" > <?php echo __('Install now!'); ?></button>
 				
 				<br></div>
 			</form>
@@ -753,7 +769,7 @@ window.onload = function () {
          
          </div>
         
-             <input type="button" value="Назад" class="previous" style="position: absolute;bottom: 52px;right: 215px;padding: 10px;font-size: 14px;margin-top: 10px;width: 127px;" />
+             <input id="super-prev" type="button" value="Назад" class="previous" />
             
            
             

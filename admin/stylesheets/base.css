@@ -36,11 +36,13 @@
 .shag{
     background: whitesmoke;
     border-radius: none;
+        padding: 1px;
 }
 
 .shag-old{
     background: #efefef;
     border-radius: none;
+    padding: 1px;
 }
 
 
@@ -75,8 +77,26 @@
     border: 1px solid #d7e9c4;
 }
 
+#super-prev{
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 14px;   
+    float: right;
+    margin-bottom: 26px;
+        background: #d7ecf0;
+    border-radius: 3px;
+    margin-top: 12px;
+    width: 127px;
+    border: 1px solid #c4d8e9;
+    } 
 
-
+    .styleshir{
+            text-align: justify;
+    padding: 0 18px 0 18px;
+    margin-top: 32px;
+    margin-bottom: 19px;
+    }
+    
 .animate-in .slide-text {
   -webkit-animation: fadeInLeftBig 1200ms cubic-bezier(0.190,1.000,0.220,1.000) 300ms both;
   animation: fadeInLeftBig 1200ms cubic-bezier(0.190,1.000,0.220,1.000) 300ms both;
@@ -885,7 +905,7 @@ input[type="button"] img {
 	.message
 */
 .message {
-	position:absolute;
+	 position: relative;
 	top:-100px;
 	right:30px;
 	background:silver;
@@ -899,7 +919,8 @@ input[type="button"] img {
 }
 
 #errorMessage {
-	background:#ff3f3f;
+	      background: #f37777;
+
 }
 
 #successMessage {
