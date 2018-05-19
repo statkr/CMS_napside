@@ -790,22 +790,50 @@ window.onload = function () {
         
          
 			<?php else: ?>
-                        <div class="col-md-12 shag" style="border-radius: 0px;    width: 1140px;"> <h4 style="
+                        <div class="col-md-12 shag" style="    background: none;"> <h4 style="
     padding: 13px 13px 12px 13px;
     font-size: 22px;
     color: #31708f;
     
 "><?php echo __('Congratulations! Napside CMS is installed!'); ?></h4></div>
-				 <div class="col-md-6" style="border-radius: 0px;"></div>
-				<div class="col-md-6" style="border-radius: 0px;">
+				 <div class="col-lg-6 hidden-md hidden-sm hidden-xs" style="border-radius: 0px;"></div>
+				<div class="col-lg-6 col-md-12" style="border-radius: 0px;padding-right: 84px;">
 				<h1 style="
     margin-top: 20px;
 "><?php echo __('You should now:'); ?></h1>
-				<p style="text-align: justify;    padding: 0 78px 0 18px;">Napside CMS установлена и готова к использованию. Для обеспечения повышенной безопасности мы предлагаем выполнить следующие рекомендации:   </p>
+				<p style="
+     padding: 10px 0px 22px 0px;
+    margin-left: 24px;">Napside CMS установлена и готова к использованию. Для обеспечения повышенной безопасности мы предлагаем выполнить следующие рекомендации:   </p>
+                                
+                                
+                                <div id="installInfo" style="
+    width: 100%;
+    color: #31708f;
+        margin-left: 20px;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    /* background: #dbf4ff; */
+    border: 1px solid #b4eaff;
+      margin-top: -10px;
+    margin-bottom: 50px;
+">
+					
+                                    
+                                    
+					<ul>
+						<li style="
+    padding-top: 8px;
+"><b><?php echo __('Username:'); ?></b> <?php echo (isset($data['username']) ? $data['username']: 'n/a'); ?></li>
+						<li><b><?php echo __('Password:'); ?></b> <?php echo (isset($password) ? $password: 'n/a'); ?></li>
+					</ul>
+                                   <a href="../admin/" class="next" style="/* margin-left:14px; */padding: 13px;/* width:  100%; */margin-bottom: 12px;/* font-size: 14px; *//* margin-top: 10px; */border-radius:  3px;/* border: 1px solid #b4eaff; */background: #00aad2;color: white;line-height: 49px;" ">
+                                    <?php echo __('Administration panel'); ?>
+                                    </a>
+					</div>
                                 
                                 
 				<ul style="
-    width: 458px;
+    width: 100%;
     margin-left: 19px;
 ">
                                     
@@ -830,20 +858,7 @@ window.onload = function () {
                                         </div>
 				</ul>
 				
-				<div id="installInfo" style="
-    width: 493px;
-">
-					
-                                    
-                                    
-					<ul>
-						<li><b><?php echo __('Username:'); ?></b> <?php echo (isset($data['username']) ? $data['username']: 'n/a'); ?></li>
-						<li><b><?php echo __('Password:'); ?></b> <?php echo (isset($password) ? $password: 'n/a'); ?></li>
-					</ul>
-                                   <button href="../admin/" class="next" style="margin-left:14px; padding: 10px;font-size: 14px; margin-top: 10px;   ">
-                                    <?php echo __('Administration panel'); ?>
-                                    </button>
-					</div>
+				
                                  </div> 
           
 			<?php endif; ?>
