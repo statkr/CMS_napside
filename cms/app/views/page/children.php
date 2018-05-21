@@ -48,15 +48,16 @@
 			
 			<span class="title">
 				<?php if( ! AuthUser::hasPermission($child->getPermissions()) ): ?>
-				<img src="images/page-text-locked.png" title="<?php echo('You do not have permission to access the requested page!'); ?>" />
+				<i class="zmdi zmdi-lock home-ico"></i><!--<?php echo('You do not have permission to access the requested page!'); ?>-->
 				<em title="/<?php echo $child->getUri(); ?>"><?php echo $child->title; ?></em>
 				<?php else: ?>
-				<img src="images/page-text.png" />
+				<i class="zmdi zmdi-file-text home-ico"></i> 
 				<a class="miniurl hidden-sm hidden-xs" href="<?php echo get_url('page/edit/'.$child->id); ?>" title="/<?php echo $child->getUri(); ?>"><?php echo $child->title; ?></a>
 				
                                 <p class="miniurl  hidden-lg hidden-md"  title="<?php echo $child->getUri(); ?>"><?php echo $child->title; ?></p>
 				<?php endif; ?>				
-				<?php if( !empty($child->behavior_id) ): ?> <i>(<?php echo Inflector::humanize($child->behavior_id); ?>)</i><?php endif; ?>
+				
+                                    <!--<?php if( !empty($child->behavior_id) ): ?> <i>(<?php echo Inflector::humanize($child->behavior_id); ?>)</i><?php endif; ?>-->
 				 	</span>
 			<span class="date hidden-sm hidden-xs"><?php echo date('Y-m-d', strtotime($child->published_on)); ?></span>
 			<span class="status hidden-sm hidden-xs">

@@ -94,6 +94,18 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+.home-ico{
+    font-size: 21px !important;
+    position: relative;
+    top: 2px;
+    left: -4px;
+}
+.but_contact{
+        background: none;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 14px;
+}
 
 .defaultSkin .mceButton {
     display: block !important;

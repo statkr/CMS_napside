@@ -88,10 +88,10 @@
 			<div class="item">
 				<span class="title">
 					<?php if( ! AuthUser::hasPermission($root->getPermissions()) ): ?>
-					<img src="images/page-text-locked.png" title="<?php echo('You do not have permission to access the requested page!'); ?>" />
-					<em title="/"><?php echo $root->title; ?></em>
+				<i class="zmdi zmdi-lock home-ico"></i><!--<?php echo('You do not have permission to access the requested page!'); ?>-->	
+                                    <em title="/"><?php echo $root->title; ?></em>
 					<?php else: ?>
-					<img src="images/page-text.png" />
+					<i class="zmdi zmdi-file-text home-ico"></i> 
 					<a href="<?php echo get_url('page/edit/1'); ?>" title="/"><?php echo $root->title; ?></a>
 					<?php endif; ?>
 					</span>

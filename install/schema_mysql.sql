@@ -68,12 +68,14 @@ CREATE TABLE TABLE_PREFIX_user (
   email varchar(255) default NULL,
   username varchar(40) NOT NULL,
   password varchar(40) default NULL,
+  image varchar(255) default NULL,
   language varchar(5) default NULL,
   created_on datetime default NULL,
   updated_on datetime default NULL,
   created_by_id int(11) default NULL,
   updated_by_id int(11) default NULL,
   last_login datetime NOT NULL,
+   
   PRIMARY KEY  (id),
   UNIQUE KEY username (username)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
