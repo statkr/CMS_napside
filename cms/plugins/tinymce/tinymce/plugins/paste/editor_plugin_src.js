@@ -22,6 +22,7 @@
 			paste_convert_middot_lists : true,
 			paste_convert_headers_to_strong : false,
 			paste_dialog_width : "450",
+                        borderRadius : "25",
 			paste_dialog_height : "400",
 			paste_text_use_dialog : false,
 			paste_text_sticky : false,
@@ -916,6 +917,7 @@
 					file: t.url + "/pasteword.htm",
 					width: parseInt(getParam(ed, "paste_dialog_width")),
 					height: parseInt(getParam(ed, "paste_dialog_height")),
+                                        borderradius: parseInt(getParam(ed, "borderRadius")),
 					inline: 1
 				});
 			});

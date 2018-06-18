@@ -1163,7 +1163,7 @@
             i.windowManager.open({
                 url: this.url + "/color_picker.htm",
                 width: 375 + parseInt(i.getLang("advanced.colorpicker_delta_width", 0)),
-                height: 250 + parseInt(i.getLang("advanced.colorpicker_delta_height", 0)),
+                height: 315 + parseInt(i.getLang("advanced.colorpicker_delta_height", 0)),
                 close_previous: false,
                 inline: true
             }, {

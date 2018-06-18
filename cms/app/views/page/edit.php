@@ -80,7 +80,11 @@ if ($pagetmp != null && !empty($pagetmp) && $parttmp != null && !empty($parttmp)
 				<label><?php echo __('Page title'); ?></label>
 				<span><input id="pageEditMetaTitleField" class="input-text" type="text" name="page[title]" value="<?php echo htmlspecialchars($page->title, ENT_QUOTES); ?>" size="255" maxlength="255" tabindex="1" /></span>
 				<a id="pageEditMetaMoreButton" href="#" title="<?php echo __('Page meta information'); ?>"><i style="
-    font-size: 20px;
+      font-size: 20px;
+    background: #2b3942;
+    padding-right: 12px;
+    padding-left: 5px;
+    margin-right: -12px;
     color: #8a9ba1;
 " class="zmdi Settingszmdi-collection-item"></i></a>
 			</p>

@@ -37,16 +37,31 @@ input.checkbox {border:1px none #000000; background:transparent; vertical-align:
 /* Buttons */
 #insert, #cancel, input.button, .updateButton {
 border:0; margin:0; padding:0;
-font-weight:bold;
-width:94px; height:26px;
-background:url(img/buttons.png) 0 -26px;
+
+    width: 107px;
+    height: 38px;
 cursor:pointer;
 padding-bottom:2px;
 float:left;
 }
 
-#insert {background:url(img/buttons.png) 0 -52px}
-#cancel {background:url(img/buttons.png) 0 0; float:right}
+#insert {    background: #d9dee0;
+    color: #22313a;
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 12px;
+    float: right;
+    margin-right: 2px;
+    margin-left: 6px;}
+#cancel {
+    background: none;
+    background: #2f3d46;
+    color: #8a9ba1;
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 12px;
+    float: right;
+}
 
 /* Browse */
 a.pickcolor, a.browse {text-decoration:none}
@@ -70,22 +85,58 @@ td.charmap, #charmap a {width:18px; height:18px; color:#000; border:1px solid #A
 
 /* Source */
 .wordWrapCode {vertical-align:middle; border:1px none #000000; background:transparent;}
-.mceActionPanel {margin-top:5px;}
+.mceActionPanel {margin-top:35px;}
 
 /* Tabs classes */
-.tabs {width:100%; height:18px; line-height:normal; background:url(img/tabs.gif) repeat-x 0 -72px;}
+.tabs {width:100%; height:18px; line-height:normal; }
 .tabs ul {margin:0; padding:0; list-style:none;}
-.tabs li {float:left; background:url(img/tabs.gif) no-repeat 0 0; margin:0 2px 0 0; padding:0 0 0 10px; line-height:17px; height:18px; display:block;}
-.tabs li.current {background:url(img/tabs.gif) no-repeat 0 -18px; margin-right:2px;}
-.tabs span {float:left; display:block; background:url(img/tabs.gif) no-repeat right -36px; padding:0px 10px 0 0;}
-.tabs .current span {background:url(img/tabs.gif) no-repeat right -54px;}
+.tabs li {float:left; 
+         
+ 
+    margin-right: 2px;
+    background: #3e4e58;
+    line-height: 28px;
+    height: 30px;
+    padding: 0 20px 0 20px;
+    font-size: 13px;
+    border-radius: 3px 3px 0 0;
+    /* color: red; */
+    display: block;
+}
+.tabs li.current {
+
+     outline:none;
+    background: #d4d4d4;
+    line-height: 28px;
+    height: 30px;
+    padding: 0 20px 0 20px;
+    font-size: 13px;
+    border-radius: 3px 3px 0 0;
+    color: red;
+         display:block;
+}
+
+.tabs li.current a{
+color: #3e4e58;
+}
+
+
+.tabs span {float:left;}
+.tabs .current span {}
 .tabs a {text-decoration:none; font-family:Verdana, Arial; font-size:10px;}
-.tabs a:link, .tabs a:visited, .tabs a:hover {color:black;}
+.tabs a:link, .tabs a:visited, .tabs a:hover {color: #d4d4d4}
 
 /* Panels */
 .panel_wrapper div.panel {display:none;}
 .panel_wrapper div.current {display:block; width:100%; height:300px; overflow:visible;}
-.panel_wrapper {border:1px solid #919B9C; border-top:0px; padding:10px; padding-top:5px; clear:both; background:white;}
+.panel_wrapper {
+    border-top: 0px;
+    padding: 10px;
+    padding-top: 5px;
+    clear: both;
+    background: #d4d4d4;
+    border-radius: 0 3px 3px 3px;
+}
 
 /* Columns */
 .column {float:left;}

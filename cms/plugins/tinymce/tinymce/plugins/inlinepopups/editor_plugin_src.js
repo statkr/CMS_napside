@@ -111,6 +111,10 @@
 				opt += ' mceMovable';
 
 			// Create DOM objects
+                        
+                        
+                        var maincontent = document.getElementByClass("mceClose");
+                        maincontent.innerHTML = "<p>";
 			t._addAll(DOM.doc.body, 
 				['div', {id : id, role : 'dialog', 'aria-labelledby': f.type ? id + '_content' : id + '_title', 'class' : (ed.settings.inlinepopups_skin || 'clearlooks2') + (tinymce.isIE && window.getSelection ? ' ie9' : ''), style : 'width:100px;height:100px'}, 
 					['div', {id : id + '_wrapper', 'class' : 'mceWrapper' + opt},
